@@ -1,0 +1,350 @@
+.aboutushai{
+    margin-top: 4.7%;
+    background: #F3F3F3;
+    
+}
+.aboutuspart{
+    padding: 1% 16%;
+    /* padding-right: 17%; */
+    position: relative;
+    text-align: center;
+}
+.aboutuspart h2{
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+}
+.aboutuspart  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.aboutuspart  h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutdescription p{
+    line-height: 6px;
+    color: #5B5B5B;
+    font-weight: 400;
+
+}
+.about-container{
+    position: relative;
+    padding: 0 5%;
+}
+.about-container .leftline{
+    position: absolute;
+    left: 2%;
+    top: -4%;
+    width: 200px;
+}
+.about-container .rightline{
+    position: absolute;
+    right: 2%;
+    top: -4%;
+    width: 200px;
+}
+.fbtcompass2{
+    position: absolute;
+    width: 220px;
+    height: 450px;
+    right: 0px;
+    top: 30%;
+}
+.productcom2{
+    position: absolute;
+    width: 280px;
+    height: 450px;
+    left: -1%;
+    top: -40%;
+}
+.fbttravel{
+    padding: 1% 16%;
+    position: relative;
+    text-align: center;
+    /* margin-top: 4%; */
+}
+.fbttravel:last-child{
+    padding-bottom: 5%;
+}
+.fbttravel h2 {
+    margin-top: 8%;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+}
+
+.fbttravel h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.fbttravel h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.fbttravel .inside_fbttravel .maskgroup1 {
+    width: 450px;
+    margin-right: 8%;
+}
+
+.inside_fbttravel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.inside_fbttravel p {
+    text-align: right;
+    font-weight: 500;
+    line-height: 24px;
+}
+.vector{
+    width: 400px;
+    height: 160px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+}
+.inside_fbttravel2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+.inside_fbttravel2 p{
+    text-align: left;
+    margin-right: 25%;
+    font-weight: 500;
+    line-height: 24px;
+}
+.mission{
+    position: relative;
+}
+.mission h3{
+    top: 30%;
+    left: 32%;
+    position: absolute;
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.mission h3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+.vector1{
+    width: 400px;
+    height: 160px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+}
+.inside_fbttravel3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+.inside_fbttravel3 p{
+    text-align: right;
+    margin-left: 25%;
+    font-weight: 500;
+    line-height: 24px;
+}
+.vission{
+    position: relative;
+}
+.vission h3{
+
+    top: 30%;
+    right: 32%;
+    position: absolute;
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.vission h3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-in from left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-in from right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations */
+.about-container.animate-slideUp {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 1.5s ease-out forwards;
+}
+@media (min-width: 1536px){
+    .fbtcompass2{
+        width: 350px;
+        height: 700px;
+    }
+    .productcom2{
+        width: 350px;
+        height: 700px;
+        top: -80%;
+    }
+    .aboutuspart h2{
+        margin-top: 5%;
+        font-size: 40px
+    }
+    .aboutdescription p{
+        font-size: 16px;
+        line-height: 8px;
+    }
+    .about-container .leftline{
+        left: 5%;
+        top: 2%;
+    }
+    .about-container .rightline{
+        right: 5%;
+        top: 2%;
+    }
+    .fbttravel h2{
+        font-size: 40px;
+    }
+    .inside_fbttravel p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .inside_fbttravel2 p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .mission h3{
+        top: 5%;
+        left: 32%;
+        font-size: 40px;
+    }
+    .inside_fbttravel3 p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .vission h3{
+        top: 5%;
+        right: 32%;
+        font-size: 40px;
+    }
+}
+@media (min-width: 1920px) {
+.aboutuspart h2{
+    font-size: 40px
+}
+.aboutdescription p{
+    font-size: 20px;
+    line-height: 8px;
+}
+.about-container .leftline{
+    left: 5%;
+    top: 2%;
+}
+.about-container .rightline{
+    right: 5%;
+    top: 2%;
+}
+.fbttravel h2{
+    font-size: 40px;
+}
+.inside_fbttravel p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.inside_fbttravel2 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.mission h3{
+    top: 5%;
+    left: 32%;
+    font-size: 40px;
+}
+.inside_fbttravel3 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.vission h3{
+    top: 5%;
+    right: 32%;
+    font-size: 40px;
+}
+}

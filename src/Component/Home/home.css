@@ -1,0 +1,922 @@
+.homecontainer {
+    width: 100%;
+    background: #F3F3F3;
+    position: relative;
+}
+
+.compass {
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    top: 1%;
+    left: -10px;
+}
+
+.compass2nd {
+    position: absolute;
+    width: 220px;
+    height: 450px;
+    right: 0px;
+    top: -15%;
+}
+
+.compass3 {
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    top: 0%;
+    left: -10px;
+}
+
+.compass4nd {
+    position: absolute;
+    width: 220px;
+    height: 450px;
+    right: 0px;
+    top: 30%;
+}
+
+.compass5 {
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    top: 15%;
+    left: -10px;
+}
+
+.compass6nd {
+    position: absolute;
+    width: 220px;
+    height: 450px;
+    right: 0px;
+    top: 60%;
+}
+
+.upsideheader {
+    padding: 1% 16%;
+    padding-right: 14%;
+}
+
+.insideheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upsideheader img {
+    width: 180px;
+    height: 70px;
+}
+
+.upsideheader .btn1,
+.btn2 {
+    padding: .5% 1.8%;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    border: 2px solid #292B5B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.upsideheader .btn1:hover,
+.btn2:hover {
+    background: #292B5B;
+    color: #fff;
+}
+
+.lists p {
+    font-size: 15px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 500;
+    margin-right: 8%;
+    transition: all 0.3s;
+}
+
+.lists a {
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 500;
+    margin-right: 8%;
+    transition: all 0.3s;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+
+.lists a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: #292B5B;
+    transition: all 0.3s;
+}
+
+.lists p:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: #292B5B;
+    transition: all 0.3s;
+}
+
+.lists p:hover {
+    color: #292B5B;
+    scale: 1.1;
+
+}
+
+.lists a:hover {
+    color: #292B5B;
+    scale: 1.1;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3.5%;
+}
+
+.headertext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -12%;
+    /* background: red; */
+    position: relative;
+}
+
+.headertext .choosemore {
+    width: 55%;
+    height: 30%;
+}
+
+.headertext .plane {
+    position: absolute;
+    top: 0%;
+    width: 8%;
+    height: 48px;
+    animation: movePlane 2s ease-in-out forwards;
+    /* Apply animation */
+}
+
+@keyframes movePlane {
+    from {
+        left: 0%;
+        opacity: 0;
+    }
+
+    to {
+        left: 46%;
+        opacity: 1;
+    }
+}
+
+.whoweare {
+    padding: 1% 16%;
+    padding-right: 14%;
+    position: relative;
+    text-align: center;
+}
+
+.whoweare h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+}
+
+.whoweare h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.whoweare h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.whoweare .inside_whoweare img {
+    width: 450px;
+    margin-right: 8%;
+}
+
+.inside_whoweare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.inside_whoweare p {
+    text-align: right;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.ourpride {
+    position: relative;
+    /* margin-top: 5%; */
+    padding: .5% 16%;
+    padding-right: 14%;
+    text-align: center;
+}
+
+.ourpride h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+}
+
+.ourpride h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.ourpride h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.content-section {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inside-content {
+    margin-right: 3%;
+
+}
+
+.whoWeAreImage {
+    width: 450px;
+}
+
+.description {
+    text-align: left;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.text-content {
+    text-align: left;
+    padding-left: 20px;
+    height: 140px;
+    margin-left: -4%;
+    overflow-y: scroll;
+}
+
+.inside-text {
+    border-left: 2px dotted #002147;
+    padding-left: 2.5%;
+    /* background: red; */
+    margin-top: -17px;
+}
+
+.text-content h3 {
+    font-size: 13px;
+    color: #292B5B;
+    font-weight: 700;
+}
+
+.text-content .same {
+    margin-top: -2%;
+    font-size: 10px;
+    color: #888888;
+    font-weight: 400;
+}
+
+.yealghai {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #888888;
+}
+
+.firth,
+.secth,
+.thth,
+.forthh {
+    position: relative;
+}
+
+.firth .dot {
+    position: absolute;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background: #EF7F1A;
+    left: -4%;
+    top: 8%;
+}
+
+.secth {
+    position: relative;
+}
+
+.secth .dot2nd {
+    position: absolute;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background: #EF7F1A;
+    left: -4%;
+    top: 6%;
+}
+
+.thth .dot3nd {
+    position: absolute;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background: #EF7F1A;
+    left: -4%;
+    top: 6%;
+}
+
+.forthh .dot4nd {
+    position: absolute;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background: #EF7F1A;
+    left: -4%;
+    top: 6%;
+}
+
+.outpledge {
+    padding: 1% 16%;
+    padding-right: 14%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.pledge {
+    width: 50%;
+}
+
+.insidepledge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowcost {
+    position: absolute;
+    color: #2A8C41;
+    font-weight: 700;
+    top: 9%;
+    left: 9.5%;
+}
+
+.direct {
+    position: absolute;
+    top: 7%;
+    right: 10.5%;
+    color: #0373EA;
+    font-weight: 700;
+}
+
+.post {
+    position: absolute;
+    top: 41%;
+    left: 8%;
+    color: #FF6C13;
+    font-weight: 700;
+}
+
+.quality {
+    position: absolute;
+    top: 38%;
+    right: 11%;
+    color: #FF48C7;
+    font-weight: 700;
+}
+
+.solution {
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    color: #5F27A5;
+    font-weight: 700;
+}
+
+.ourhonour {
+    padding: 1% 16%;
+    padding-right: 14%;
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.ourhonour h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+}
+
+.ourhonour h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.ourhonour h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.honour-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.honour-card {
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    /* Ensures the circle doesn’t overflow the card */
+}
+
+.honour-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Add a circular overlay on hover */
+.honour-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(211, 211, 211, 0.4);
+    /* Light gray with transparency */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.3s ease;
+}
+
+.honour-card:hover::after {
+    width: 150%;
+    height: 150%;
+}
+
+.honour-card h3 {
+    font-size: 24px;
+    color: #EF7F1A;
+    margin: 0;
+    font-weight: bold;
+}
+
+.honour-card p {
+    font-size: 14px;
+    color: #7E7E7E;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.honour-card:last-child {
+    grid-column: span 4;
+    justify-self: center;
+    padding: 30px 50px;
+}
+
+.ourvalue {
+    padding: 1% 16%;
+    padding-right: 14%;
+    position: relative;
+    margin-top: 5%;
+
+}
+
+.ourvalue .insidevalue img {
+    width: 100%;
+}
+
+.ourachiv {
+    padding: 2% 16%;
+    padding-right: 14%;
+    text-align: center;
+}
+
+.ourachiv h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+}
+
+.ourachiv h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.ourachiv h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.ourachiv .inside-achiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ourachiv .inside-achiv .firstimg {
+    width: 13%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.ourachiv .inside-achiv .firstimg:hover {
+    scale: 1.1;
+}
+
+.ourachiv .inside-achiv .forthimg {
+    width: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.ourachiv .inside-achiv .forthimg:hover {
+    scale: 1.1;
+}
+
+.ourachiv .inside-achiv .fifthimg {
+    width: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.ourachiv .inside-achiv .fifthimg:hover {
+    scale: 1.1;
+}
+
+@media (min-width: 1536px) {
+    .compass {
+        width: 350px;
+        height: 700px;
+    }
+
+    .compass2nd {
+        width: 350px;
+        height: 700px;
+    }
+
+    .compass3 {
+        width: 350px;
+        height: 700px;
+    }
+
+    .compass4nd {
+        width: 350px;
+        height: 700px;
+    }
+
+    .compass5 {
+        width: 350px;
+        height: 700px;
+    }
+
+    .compass6nd {
+        top: 24%;
+        width: 350px;
+        height: 700px;
+    }
+    .lists a {
+        margin-top: 2.5%;
+        margin-bottom: 4%;
+        font-size: 18.6px;
+    }
+    .upsideheader img {
+        width: 227px;
+        height: 103px;
+    }
+
+    .upsideheader .btn1,
+    .btn2 {
+        font-size: 18.62px;
+    }
+    .whoweare h2 {
+        font-size: 40px;
+    }
+    .inside_whoweare p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .ourpride h2 {
+        font-size: 40px;
+    }
+    .description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .text-content .same {
+        font-size: 16px;
+    }
+    .firth h3,
+    .secth h3,
+    .thth h3,
+    .forthh h3 {
+        font-size: 22px;
+    }
+    .firth .dot {
+        left: -4%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .secth .dot2nd {
+        left: -4%;
+        height: 15px;
+        width: 15px
+    }
+
+    .thth .dot3nd {
+        left: -4%;
+        height: 15px;
+        width: 15px
+    }
+
+    .forthh .dot4nd {
+        left: -4%;
+        height: 15px;
+        width: 15px
+    }
+    .yealghai {
+        font-size: 22px;
+    }
+    .ourhonour h2 {
+        font-size: 40px;
+    }
+    .honour-card h3 {
+        font-size: 45px;
+    }
+
+    .honour-card p {
+        font-size: 22px;
+    }
+
+    .honour-grid {
+        max-width: 1200px;
+        gap: 15px;
+    }
+
+    .honour-card {
+        border-radius: 12px;
+    }
+    .ourvalue .insidevalue img {
+        margin-top: 6%;
+        scale: 1.4;
+    }
+    .ourachiv h2 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .compass {
+        width: 450px;
+        height: 859px;
+    }
+
+    .compass2nd {
+        width: 450px;
+        height: 859px;
+    }
+
+    .compass3 {
+        width: 450px;
+        height: 859px;
+    }
+
+    .compass4nd {
+        width: 450px;
+        height: 859px;
+    }
+
+    .compass5 {
+        width: 450px;
+        height: 859px;
+    }
+
+    .compass6nd {
+        top: 24%;
+        width: 450px;
+        height: 859px;
+    }
+
+    .lists a {
+        margin-top: 2.5%;
+        margin-bottom: 4%;
+        font-size: 18.6px;
+    }
+
+    .upsideheader img {
+        width: 227px;
+        height: 103px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 18.62px;
+    }
+
+    .headertext .choosemore {
+        width: 55%;
+        height: 30%;
+    }
+
+    .whoweare h2 {
+        font-size: 40px;
+    }
+
+    .inside_whoweare p {
+        font-size: 20px;
+        line-height: 37px;
+    }
+
+    .ourpride h2 {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .text-content .same {
+        font-size: 16px;
+    }
+
+    .firth h3,
+    .secth h3,
+    .thth h3,
+    .forthh h3 {
+        font-size: 22px;
+    }
+
+    .firth .dot {
+        left: -3.6%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .secth .dot2nd {
+        left: -3.6%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .thth .dot3nd {
+        left: -3.6%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .forthh .dot4nd {
+        left: -3.6%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .yealghai {
+        font-size: 22px;
+    }
+
+    .lowcost {
+        left: 8%;
+        font-size: 22px;
+    }
+
+    .direct {
+        right: 8%;
+        font-size: 22px;
+    }
+
+    .post {
+        left: 3%;
+        top: 44%;
+        font-size: 22px;
+    }
+
+    .quality {
+        right: 6%;
+        font-size: 22px;
+    }
+
+    .solution {
+        left: 8%;
+        font-size: 22px;
+    }
+
+    .pledge {
+        width: 60%;
+        font-size: 22px;
+    }
+
+    .ourhonour h2 {
+        font-size: 40px;
+    }
+
+    .honour-card h3 {
+        font-size: 45px;
+    }
+
+    .honour-card p {
+        font-size: 28px;
+    }
+
+    .honour-grid {
+        max-width: 1200px;
+        gap: 15px;
+    }
+
+    .honour-card {
+        border-radius: 12px;
+    }
+
+    .ourvalue .insidevalue img {
+        margin-top: 6%;
+        scale: 1.4;
+    }
+
+    .ourachiv h2 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+}

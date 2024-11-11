@@ -1,0 +1,77 @@
+.nyaheader {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+  .inside-nyaheader{
+    width: 100%;
+    display: flex;
+    padding: 0.5% 16%;
+    justify-content: space-between;
+  }
+  .nyaheader .logo img {
+    width: 100px;
+    height: 45px;
+  }
+ .nyaheader .navbar {
+    display: flex;
+    align-items: center;
+  }
+ .nyaheader .navbar a{
+   font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 70px;
+    /* position: relative; */
+    text-decoration: none;
+    color: #000;
+ }
+ .nyaheader .navbar a:hover{
+   color: #292B5B;
+   scale: 1.1;
+ }
+ .nyaheader .navbar a:hover::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: #292B5B;
+   transition: all 0.3s; 
+ }
+ .nyaheader .navbar a:last-child{
+   margin-right: 0;
+ }
+ @media (min-width: 1536px){
+  .inside-nyaheader{
+    padding: 1% 16%;
+  }
+  .nyaheader .logo img{
+    width: 145px;
+    height: 63px;
+  }
+  .nyaheader .navbar a{
+    font-size: 18.6px;
+  }
+ }
+ @media (min-width: 1920px) {
+  .inside-nyaheader{
+    padding: 1% 16%;
+  }
+  .nyaheader .logo img{
+    width: 145px;
+    height: 63px;
+  }
+  .nyaheader .navbar a{
+    font-size: 18.6px;
+  }
+ }
+ 

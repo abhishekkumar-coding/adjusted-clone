@@ -1,0 +1,369 @@
+.producthai{
+    margin-top: 4.7%;
+    background: #F3F3F3;
+}
+.ourproductpart{
+    padding: 1% 16%;
+    /* padding-right: 17%; */
+    position: relative;
+    text-align: center;
+}
+.productcom{
+    position: absolute;
+    width: 320px;
+    height: 550px;
+    top: -75%;
+    left: -10px;
+}
+.ourproductpart h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    /* Needed for positioning the pseudo-element */
+}
+
+.ourproductpart h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the border */
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+}
+
+.ourproductpart h2 span {
+    background: linear-gradient(97.69deg, #5E5D7F 2.97%, #EF7F1A 97.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.description-container{
+    position: relative;
+    padding: 0 5%;
+}
+.description-container .leftline{
+    position: absolute;
+    left: 3%;
+    top: 1%;
+    width: 200px;
+}
+.description-container .rightline{
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    width: 200px;
+}
+.product-description p{
+    line-height: 8px;
+    color: #5B5B5B;
+    font-weight: 400;
+}
+.anemationpart{
+    margin-top: 3%;
+    padding: 1% 16%;
+}
+.insideanemationpart{
+    text-align: center;
+}
+.insideanemationpart i{
+    cursor: pointer;
+}
+.product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px 20px;
+    border-radius: 40px;
+    /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); */
+    /* max-width: 700px; */
+    margin: 20px auto;
+    position: relative;
+    margin-bottom: 0px;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+
+}
+.product-header .bluebox {
+    width: 100px;
+    height: 55px;
+    border-radius: 50px;
+    background: #292B5B;
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: transform 2s ease; /* Smooth transition */
+}
+
+.bluebox.animate {
+    animation: slide-right 2s forwards;
+}
+
+@keyframes slide-right {
+    from {
+        left: 1%;
+    }
+    to {
+        left: 88%; /* Adjust to ensure the bluebox moves near the right edge */
+    }
+}
+.flybird-logo {
+    width: 75px;
+    height: auto;
+    margin-right: 15px;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.flybird-logo.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.flybird-logo.visible {
+    opacity: 1;
+    display: inline; /* Ensure it is visible when opacity is 1 */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 9;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-left: 3%;
+}
+.red-title {
+    color: #E51E25;
+    font-weight: 500; /* Changes the color of the main-title to red */
+}
+
+.sub-title {
+    font-size: 1rem;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 3%;
+    border-left: 2px solid #939393;
+    padding-left: 2%;
+    text-align: left;
+}
+.entersite{
+    position: absolute;
+    right: 60%;
+    display: flex;
+    z-index: 9;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 2s;
+}
+.opa{
+    opacity: 1;
+    right: 2%;
+}
+.entersite p{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.hiddenthingh {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 0px;
+    transition: height 0.5s ease;
+    padding: 0px 15px; /* Smooth transition for height */
+}
+
+.hiddenthingh.expanded {
+    height: 240px; 
+}
+.hiddenthingh p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #5B5B5B;
+    font-weight: 500;
+    text-align: left;
+}
+
+.hiddenthingh h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #505050;
+    text-decoration: underline;
+}
+
+.featurlist{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+.featurlist ul li{
+    font-size: 13px;
+    color: #5B5B5B;
+    font-weight: 500;
+    cursor: pointer;
+    /* transition: all .1s; */
+}
+/* .featurlist ul li:hover{
+    scale: 1.05;
+} */
+@media (min-width: 1536px){
+    .productcom{
+        width: 400px;
+        height: 700px;
+        top: -90%;
+    } 
+    .ourproductpart h2{
+        font-size: 40px;
+        margin-top: 5%;
+    }
+    .product-description p{
+        font-size: 17px;
+        line-height: 8px;
+    }
+    .description-container .leftline{
+        left: 5%;
+        top: 3%;
+    }
+    .description-container .rightline{
+        right: 5%;
+        top: 3%;
+    }
+    .product-header{
+        border-radius: 50%;
+    }
+    .product-header .bluebox{
+        width: 120px;
+    height: 80px;
+    }
+    .product-header{
+        padding-top: 10px;
+        border-radius: 50px;
+    }
+    .flybird-logo {
+        width: 100px;
+        padding-bottom: 8px;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+    .sub-title {
+        font-size: 20px;
+    }
+    .entersite{
+        font-size: 18px;
+    }
+    .entersite p{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    @keyframes slide-right {
+        from {
+            left: 1%;
+        }
+        to {
+            left: 87.5%; /* Adjust to ensure the bluebox moves near the right edge */
+        }
+    }
+    .hiddenthingh.expanded{
+        height: 380px;
+    }
+    .hiddenthingh p {
+        font-size: 18px;
+    }
+    .featurlist ul li{
+        font-size: 18px;
+    }
+    .hiddenthingh h4 {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1920px){
+    .productcom{
+        width: 400px;
+        height: 700px;
+        top: -90%;
+    } 
+    .ourproductpart h2{
+        font-size: 40px;
+        margin-top: 5%;
+    }
+    .product-description p{
+        font-size: 20px;
+        line-height: 8px;
+    }
+    .description-container .leftline{
+        left: 5%;
+        top: 3%;
+    }
+    .description-container .rightline{
+        right: 5%;
+        top: 3%;
+    }
+    .product-header .bluebox{
+        width: 150px;
+    height: 90px;
+    }
+    .product-header{
+        padding-top: 10px;
+        border-radius: 50px;
+    }
+    .flybird-logo {
+        width: 130px;
+        padding-bottom: 8px;
+    }
+    .main-title {
+        font-size: 40px;
+    }
+    .sub-title {
+        font-size: 22px;
+    }
+    .entersite{
+        font-size: 20px;
+    }
+    .entersite p{
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+    @keyframes slide-right {
+        from {
+            left: 1%;
+        }
+        to {
+            left: 87.5%; /* Adjust to ensure the bluebox moves near the right edge */
+        }
+    }
+    .hiddenthingh.expanded{
+        height: 380px;
+    }
+    .hiddenthingh p {
+        font-size: 20px;
+    }
+    .featurlist ul li{
+        font-size: 20px;
+    }
+    .hiddenthingh h4 {
+        font-size: 20px;
+    }
+}
+

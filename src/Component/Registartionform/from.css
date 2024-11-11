@@ -1,0 +1,231 @@
+.registrationform {
+    margin: 0 auto;
+    width: 43%;
+    height: 420px;
+    margin-top: 7.5rem;
+    position: relative;
+}
+.registrationform img {
+    width: 100%;
+    height: 100%;
+}
+/* .form-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 420px;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 5px solid #EF7F1A;
+    padding: 5px 15px;
+    font-family: "Inter", sans-serif;
+} */
+.wishclose-btn{
+    position: absolute;
+    right: 0px;
+    top: 2.5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+.puraformhai{
+    z-index: 9;
+    background: red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 330px;
+    height: 405px;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 5px solid #EF7F1A;
+    padding: 5px 15px;
+    font-family: "Inter", sans-serif;
+}
+.form-header {
+    text-align: center;
+}
+.form-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    background: linear-gradient(90.26deg, #FECC00 0.11%, #EF7F1A 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: -3%;
+}
+.registration{
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid #D8D8D8;
+    display: inline-block;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.form-group-wish {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.form-label span {
+    color: #FF0000;
+}
+
+.form-input-wish {
+    margin-top: 10px;
+    padding: 8.7px 8px;
+    width: 96%;
+    background: #EF7F1A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.form-input-wish::placeholder {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.phone-group {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.phone-left-wish {
+    display: flex;
+    align-items: center;
+}
+
+.phone-flag {
+    display: flex;
+    align-items: center;
+    background: #FECC00;
+    padding: 2.8px 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+
+.phone-flag img {
+    width: 25px;
+    height: 25px;
+}
+
+.phone-flag i {
+    font-size: 10px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.phone-left-wish p {
+    z-index: 5;
+    background: #EF7F1A;
+    padding: 8.5px 13px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: -5px;
+}
+
+.phone-right input {
+    padding: 8.2px 8px;
+    width: 110%;
+    background: #EF7F1A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.phone-right input::placeholder {
+    color: #fff;
+    font-weight: 500;
+}
+.emailhai{
+    margin-top: -20px;
+}
+.dobhai{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2%;
+}
+.ekor{  
+    width: 43%;
+    background: #fff;
+    border: 1px solid #EF7F1A;
+    color: #A4A4A4;
+}
+.ekor::placeholder{
+    color: #A4A4A4;
+}
+.ekdusra{
+    width: 43%;
+    background: #fff;
+    border: 1px solid #EF7F1A;
+    color: #A4A4A4;
+}
+.form-submit {
+    padding: 10px 8px;
+    width: 100%;
+    background: #292B5B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    margin-top: 5%;
+}
+.form-submit:hover{
+    background: #171831;
+}
+.form-footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 270px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+
+.form-footer span {
+    text-decoration: underline;
+}

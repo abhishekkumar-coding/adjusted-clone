@@ -61,7 +61,7 @@ const Footer = () => {
                         <li>FBT DMC</li>
                         <li>FBT Umrah</li>
                         <li>FBT Study Abroad</li>
-                        <li>Techzag</li>
+                        <li>Techaag</li>
                         <li>Holiday 24/7</li>
                         <li>FBT Marine</li>
                         <li>FBT Academy</li>

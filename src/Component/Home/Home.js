@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import logo from "../../assets/Home/fbtBluelogo.png"
 import compass from "../../assets/Home/compass1.png"
 import compass2 from "../../assets/Home/compass2.png"
@@ -15,22 +15,48 @@ import fifth from "../../assets/Home/5th.png"
 import plane from "../../assets/Home/animatedplane.png"
 import "./home.css"
 import { NavLink } from 'react-router-dom'
+import Header from '../Header/Header';
 const Home = () => {
+    const [showHeader, setShowHeader] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setShowHeader(true); // Show the header when scrolled down
+            } else {
+                setShowHeader(false); // Hide the header when at the top
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup the event listener
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className='homecontainer'>
             <img className='compass' src={compass} alt='compass' />
             <div className='upsideheader'>
-                <div className='insideheader'>
-                    <NavLink to="/aboutus" className='btn1'>About Us</NavLink>
-                    <img src={logo} alt='logo' />
-                    <NavLink to="/product" className='btn2'>Our Product</NavLink>
-                </div>
-                <div className='lists'>
-                    <NavLink to="/careers">Careers</NavLink>
-                    <NavLink to="/events">Events</NavLink>
-                    <NavLink to="/csrpage">CSR</NavLink>
-                    <NavLink to="/contactus">Contacts</NavLink>
-                </div>
+                {!showHeader && (
+                    <div>
+                        <div className='insideheader'>
+                            <NavLink to="/aboutus" className='btn1'>About Us</NavLink>
+                            <img src={logo} alt='logo' />
+                            <NavLink to="/product" className='btn2'>Our Product</NavLink>
+                        </div>
+                        <div className='lists'>
+                            <NavLink to="/careers">Careers</NavLink>
+                            <NavLink to="/events">Events</NavLink>
+                            <NavLink to="/csrpage">CSR</NavLink>
+                            <NavLink to="/contactus">Contacts</NavLink>
+                        </div>
+                    </div>
+                )}
+                {/* Sticky Header visible on scroll */}
+                {showHeader && <Header />}
                 <div className='headertext'>
                     <img className='plane' src={plane} alt='plane' />
                     <img className='choosemore' src={headertext} alt='headertext' />

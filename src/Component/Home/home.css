@@ -1,112 +1,12 @@
-.homecontainer {
-    width: 100%;
-    background: #F3F3F3;
-    position: relative;
-}
-
-.compass {
-    position: absolute;
-    width: 250px;
-    height: 450px;
-    top: 1%;
-    left: -10px;
-}
-
-.compass2nd {
-    position: absolute;
-    width: 220px;
-    height: 450px;
-    right: 0px;
-    top: -15%;
-}
-
-.compass3 {
-    position: absolute;
-    width: 250px;
-    height: 450px;
-    top: 0%;
-    left: -10px;
-}
-
-.compass4nd {
-    position: absolute;
-    width: 220px;
-    height: 450px;
-    right: 0px;
-    top: 30%;
-}
-
-.compass5 {
-    position: absolute;
-    width: 250px;
-    height: 450px;
-    top: 15%;
-    left: -10px;
-}
-
-.compass6nd {
-    position: absolute;
-    width: 220px;
-    height: 450px;
-    right: 0px;
-    top: 60%;
-}
-
-.upsideheader {
-    padding: 1% 16%;
-    padding-right: 14%;
-}
-
-.insideheader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.upsideheader img {
-    width: 180px;
-    height: 70px;
-}
-
-.upsideheader .btn1,
-.btn2 {
-    padding: .5% 1.8%;
-    font-size: 15px;
-    color: #000000;
-    font-weight: 500;
-    border: 2px solid #292B5B;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-}
-
-.upsideheader .btn1:hover,
-.btn2:hover {
-    background: #292B5B;
-    color: #fff;
-}
-
-.lists p {
+/* .lists p {
     font-size: 15px;
     cursor: pointer;
     color: #000000;
     font-weight: 500;
     margin-right: 8%;
     transition: all 0.3s;
-}
+} */
 
-.lists a {
-    text-decoration: none;
-    font-size: 15px;
-    cursor: pointer;
-    color: #000000;
-    font-weight: 500;
-    margin-right: 8%;
-    transition: all 0.3s;
-    margin-top: 1.5%;
-    margin-bottom: 1%;
-}
 
 .lists a:hover::after {
     content: '';
@@ -120,7 +20,7 @@
     transition: all 0.3s;
 }
 
-.lists p:hover::after {
+/* .lists p:hover::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -128,47 +28,25 @@
     width: 100%;
     height: 2px;
     /* Thickness of the border */
-    background: #292B5B;
+/* background: #292B5B;
     transition: all 0.3s;
-}
+} */
 
-.lists p:hover {
+/* .lists p:hover {
     color: #292B5B;
     scale: 1.1;
 
-}
+} */
 
-.lists a:hover {
-    color: #292B5B;
-    scale: 1.1;
-}
 
-.lists {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3.5%;
-}
 
-.headertext {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -12%;
-    /* background: red; */
-    position: relative;
-}
 
-.headertext .choosemore {
-    width: 55%;
-    height: 30%;
-}
+
+
+
+
 
 .headertext .plane {
-    position: absolute;
-    top: 0%;
-    width: 8%;
-    height: 48px;
     animation: movePlane 2s ease-in-out forwards;
     /* Apply animation */
 }
@@ -185,21 +63,8 @@
     }
 }
 
-.whoweare {
-    padding: 1% 16%;
-    padding-right: 14%;
-    position: relative;
-    text-align: center;
-}
 
-.whoweare h2 {
-    display: inline-block;
-    padding-bottom: 10px;
-    color: #000000;
-    font-weight: 700;
-    position: relative;
-    /* Needed for positioning the pseudo-element */
-}
+
 
 .whoweare h2::after {
     content: '';
@@ -220,23 +85,7 @@
     color: transparent;
 }
 
-.whoweare .inside_whoweare img {
-    width: 450px;
-    margin-right: 8%;
-}
 
-.inside_whoweare {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
-}
-
-.inside_whoweare p {
-    text-align: right;
-    font-weight: 500;
-    line-height: 24px;
-}
 
 .ourpride {
     position: relative;
@@ -655,11 +504,13 @@
         width: 350px;
         height: 700px;
     }
+
     .lists a {
         margin-top: 2.5%;
         margin-bottom: 4%;
         font-size: 18.6px;
     }
+
     .upsideheader img {
         width: 227px;
         height: 103px;
@@ -669,29 +520,36 @@
     .btn2 {
         font-size: 18.62px;
     }
+
     .whoweare h2 {
         font-size: 40px;
     }
+
     .inside_whoweare p {
         font-size: 20px;
         line-height: 30px;
     }
+
     .ourpride h2 {
         font-size: 40px;
     }
+
     .description {
         font-size: 20px;
         line-height: 30px;
     }
+
     .text-content .same {
         font-size: 16px;
     }
+
     .firth h3,
     .secth h3,
     .thth h3,
     .forthh h3 {
         font-size: 22px;
     }
+
     .firth .dot {
         left: -4%;
         height: 15px;
@@ -715,12 +573,15 @@
         height: 15px;
         width: 15px
     }
+
     .yealghai {
         font-size: 22px;
     }
+
     .ourhonour h2 {
         font-size: 40px;
     }
+
     .honour-card h3 {
         font-size: 45px;
     }
@@ -737,10 +598,12 @@
     .honour-card {
         border-radius: 12px;
     }
+
     .ourvalue .insidevalue img {
         margin-top: 6%;
         scale: 1.4;
     }
+
     .ourachiv h2 {
         font-size: 40px;
         margin-top: 10%;
